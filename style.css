@@ -1,135 +1,40 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-body{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    overflow:hidden;
-    background:linear-gradient(135deg,#f5eeff,#e7d2ff,#d4b0ff,#b57cff);
-    color:#3f2b63;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.background{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:
-        radial-gradient(circle at 20% 20%,rgba(255,255,255,.4) 2px,transparent 2px),
-        radial-gradient(circle at 70% 60%,rgba(255,255,255,.3) 2px,transparent 2px),
-        radial-gradient(circle at 40% 80%,rgba(255,255,255,.4) 2px,transparent 2px);
-    background-size:120px 120px;
-    animation:floatBackground 25s linear infinite;
-    z-index:-1;
-}
+    <title>For My Amina 💜</title>
 
-@keyframes floatBackground{
-    from{
-        transform:translateY(0);
-    }
-    to{
-        transform:translateY(120px);
-    }
-}
+    <link rel="stylesheet" href="style.css">
+</head>
 
-.container{
-    width:90%;
-    max-width:760px;
-    padding:60px;
-    text-align:center;
+<body>
 
-    background:rgba(255,255,255,.28);
-    backdrop-filter:blur(20px);
+<div class="background"></div>
 
-    border-radius:35px;
+<div class="flowers"></div>
 
-    border:1px solid rgba(255,255,255,.4);
+<div class="container">
 
-    box-shadow:0 20px 60px rgba(0,0,0,.18);
+    <h3>Made with Love</h3>
 
-    animation:fadeIn 1s ease;
-}
+    <h1>For My Amina 💜</h1>
 
-h3{
-    color:#6d4db6;
-    letter-spacing:5px;
-    margin-bottom:15px;
-    text-transform:uppercase;
-}
+    <p class="quote">
+        Welcome to a little world that belongs only to us.
+        Every page holds a memory, a promise, and a piece of my heart.
+    </p>
 
-h1{
-    font-size:68px;
-    color:#432b7c;
-    margin-bottom:25px;
-}
+    <a href="pages/letters.html" class="button">
+        Enter My Heart ❤️
+    </a>
 
-.quote{
-    font-size:22px;
-    line-height:1.8;
-    color:#5f4b87;
-    margin-bottom:45px;
-}
+</div>
 
-.button{
-    display:inline-block;
-    padding:18px 45px;
-    background:#7a3cff;
-    color:white;
-    text-decoration:none;
-    border-radius:50px;
-    font-size:20px;
-    font-weight:bold;
-    transition:.3s;
-    box-shadow:0 12px 30px rgba(122,60,255,.35);
-}
+<script src="script.js"></script>
 
-.button:hover{
-    transform:translateY(-4px);
-    box-shadow:0 18px 35px rgba(122,60,255,.45);
-}
+</body>
 
-.footer{
-    margin-top:35px;
-    color:#755f9f;
-    font-size:15px;
-}
-
-@keyframes fadeIn{
-    from{
-        opacity:0;
-        transform:translateY(30px);
-    }
-
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-@media(max-width:768px){
-
-.container{
-    padding:35px 25px;
-}
-
-h1{
-    font-size:42px;
-}
-
-.quote{
-    font-size:18px;
-}
-
-.button{
-    font-size:18px;
-    padding:15px 35px;
-}
-
-}
+</html>
