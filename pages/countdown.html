@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Our Time Together</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:linear-gradient(135deg,#b57cff,#f8efff);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+overflow:hidden;
+}
+
+.card{
+background:white;
+padding:50px;
+border-radius:30px;
+width:90%;
+max-width:700px;
+text-align:center;
+box-shadow:0 20px 40px rgba(0,0,0,.2);
+}
+
+h1{
+color:#7a3cff;
+margin-bottom:20px;
+}
+
+#timer{
+font-size:35px;
+line-height:1.8;
+color:#444;
+margin:30px 0;
+font-weight:bold;
+}
+
+p{
+font-size:20px;
+color:#666;
+}
+
+.button{
+display:inline-block;
+margin-top:35px;
+padding:18px 35px;
+background:#7a3cff;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>💜 Every Second With You Matters 💜</h1>
+
+<p>Since June 3rd, 2026...</p>
+
+<div id="timer"></div>
+
+<p>
+Every second that passes is another second I'm grateful to have you in my life.
+</p>
+
+<a class="button" href="promise.html">
+One Last Page ❤️
+</a>
+
+</div>
+
+<script>
+
+const startDate = new Date("2026-06-03T00:00:00");
+
+function updateTimer(){
+
+const now = new Date();
+
+const diff = now - startDate;
+
+const days = Math.floor(diff / (1000*60*60*24));
+
+const hours = Math.floor((diff/(1000*60*60))%24);
+
+const minutes = Math.floor((diff/(1000*60))%60);
+
+const seconds = Math.floor((diff/1000)%60);
+
+document.getElementById("timer").innerHTML =
+${days} Days<br>
+${hours} Hours<br>
+${minutes} Minutes<br>
+${seconds} Seconds;
+
+}
+
+updateTimer();
+
+setInterval(updateTimer,1000);
+
+</script>
+
+</body>
+</html>
