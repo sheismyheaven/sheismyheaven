@@ -18,7 +18,8 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    overflow:hidden;
+    overflow-x:hidden;
+overflow-y:auto;
     background:linear-gradient(135deg,#f5eeff,#e7d2ff,#d4b0ff,#b57cff);
     color:#3f2b63;
 }
