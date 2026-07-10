@@ -7,6 +7,15 @@ font-family:Arial,Helvetica,sans-serif;
 
 body{
 
+background:linear-gradient(
+135deg,
+#F5EEFF,
+#E9D5FF,
+#D8B4FE,
+#C084FC
+);
+
+}
 background:linear-gradient(135deg,#b57cff,#d7b4ff,#ffffff);
 
 height:100vh;
