@@ -1,1 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Memories</title>
+
+<style>
+
+body{
+
+margin:0;
+
+font-family:Arial,Helvetica,sans-serif;
+
+background:linear-gradient(135deg,#b57cff,#f8efff);
+
+padding:40px;
+
+}
+
+h1{
+
+text-align:center;
+
+color:white;
+
+margin-bottom:40px;
+
+}
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+}
+
+.gallery img{
+
+width:100%;
+
+height:280px;
+
+object-fit:cover;
+
+border-radius:20px;
+
+cursor:pointer;
+
+transition:.3s;
+
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+.gallery img:hover{
+
+transform:scale(1.04);
+
+}
+
+.lightbox{
+
+display:none;
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,.85);
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+.lightbox img{
+
+max-width:90%;
+
+max-height:90%;
+
+border-radius:20px;
+
+}
+
+.close{
+
+position:absolute;
+
+top:25px;
+
+right:40px;
+
+font-size:45px;
+
+color:white;
+
+cursor:pointer;
+
+}
+
+.next{
+
+display:block;
+
+width:max-content;
+
+margin:50px auto;
+
+padding:16px 35px;
+
+background:white;
+
+color:#7a3cff;
+
+text-decoration:none;
+
+border-radius:50px;
+
+font-weight:bold;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>📸 Our Beautiful Memories</h1>
+
+<div class="gallery">
+
+<img src="../images/photo1.jpg" onclick="show(this.src)">
+<img src="../images/photo2.jpg" onclick="show(this.src)">
+<img src="../images/photo3.jpg" onclick="show(this.src)">
+<img src="../images/photo4.jpg" onclick="show(this.src)">
+<img src="../images/photo5.jpg" onclick="show(this.src)">
+<img src="../images/photo6.jpg" onclick="show(this.src)">
+<img src="../images/photo7.jpg" onclick="show(this.src)">
+<img src="../images/photo8.jpg" onclick="show(this.src)">
+<img src="../images/photo9.jpg" onclick="show(this.src)">
+<img src="../images/photo10.jpg" onclick="show(this.src)">
+<img src="../images/photo11.jpg" onclick="show(this.src)">
+<img src="../images/photo12.jpg" onclick="show(this.src)">
+<img src="../images/photo13.jpg" onclick="show(this.src)">
+<img src="../images/photo14.jpg" onclick="show(this.src)">
+<img src="../images/photo15.jpg" onclick="show(this.src)">
+
+</div>
+
+<div class="lightbox" id="box">
+
+<span class="close" onclick="hide()">&times;</span>
+
+<img id="big">
+
+</div>
+
+<a class="next" href="reasons.html">
+
+100 Reasons I Love You ❤️
+
+</a>
+
+<script>
+
+function show(src){
+
+document.getElementById("box").style.display="flex";
+
+document.getElementById("big").src=src;
+
+}
+
+function hide(){
+
+document.getElementById("box").style.display="none";
+
+}
+
+</script>
+
+</body>
+</html>
